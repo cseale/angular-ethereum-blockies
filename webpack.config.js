@@ -9,8 +9,8 @@ module.exports = function (env) {
     entry: './index.js',
     output: {
       path: path.join(__dirname, 'dist'),
-      filename: PROD ? 'angular-ethereum-blockies.min.js' : 'angular-ethereum-blockies.js',
-      library: ['angularEthereumBlockies'],
+      filename: PROD ? 'angularjs-identicon.min.js' : 'angularjs-identicon.js',
+      library: ['angularEthereumidenticon'],
       libraryTarget: 'umd'
     },
     plugins: PROD ? [
@@ -37,4 +37,4 @@ module.exports = function (env) {
       angular: 'angular'
     }
   };
-}
+};

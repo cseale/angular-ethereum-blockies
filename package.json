@@ -1,29 +1,32 @@
 {
-  "name": "angular-ethereum-blockies",
+  "name": "angularjs-identicon",
   "version": "1.0.0",
-  "description": "AngularJS Component Wrapper for Ethereum Blockies",
-  "main": "./dist/angular-ethereum-blockies.js",
+  "description": "AngularJS Component Wrapper for Identicon",
+  "main": "./dist/angularjs-identicon.js",
   "scripts": {
-    "test": "jest"
+    "prepublish": "npm test && npm run build",
+    "test": "./node_modules/.bin/jest",
+    "start": "./node_modules/.bin/webpack-dev-server --config ./webpack.demo.config.js --progress",
+    "build": "rm -rf dist && ./node_modules/.bin/webpack && ./node_modules/.bin/webpack --env.prod"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/cseale/angular-ethereum-blockies.git"
+    "url": "git+ssh://git@github.com/cseale/angularjs-identicon.git"
   },
   "keywords": [
     "angularjs",
     "ethereum",
-    "blockies",
     "identicon"
   ],
   "author": "Colm Seale",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cseale/angular-ethereum-blockies/issues"
+    "url": "https://github.com/cseale/angularjs-identicon/issues"
   },
-  "homepage": "https://github.com/cseale/angular-ethereum-blockies#readme",
+  "homepage": "https://github.com/cseale/angularjs-identicon#readme",
   "dependencies": {
-    "angular": ">=1.0.0 <1.7.0"
+    "angular": ">=1.0.0 <1.7.0",
+    "identicon.js": "^2.3.1"
   },
   "devDependencies": {
     "angular-mocks": ">=1.0.0 <1.7.0",
@@ -38,6 +41,7 @@
     "eslint-plugin-angular": "^2.3.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jest": "^19.0.1",
+    "html-webpack-plugin": "^2.30.1",
     "jest": "^19.0.2",
     "regenerator-runtime": "^0.10.3",
     "webpack": "^2.3.3",
