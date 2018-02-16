@@ -1,0 +1,25 @@
+{
+  "name": "angular-ethereum-blockies",
+  "version": "1.0.0",
+  "description": "AngularJS Component Wrapper for Ethereum Blockies",
+  "main": "./dist/angular-ethereum-blockies.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/cseale/angular-ethereum-blockies.git"
+  },
+  "keywords": [
+    "angularjs",
+    "ethereum",
+    "blockies",
+    "identicon"
+  ],
+  "author": "Colm Seale",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cseale/angular-ethereum-blockies/issues"
+  },
+  "homepage": "https://github.com/cseale/angular-ethereum-blockies#readme"
+}
